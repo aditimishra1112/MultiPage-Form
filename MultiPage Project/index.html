@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container">
+
+        <header>Registration Form</header>
+        <form action="form1.html" name="myForm" class="form" onsubmit="return saveData()">
+            <div class="input-box">
+                <div id="name" class="column">
+                    <label for="name1">Name</label>
+                    <input name="name" type="text" placeholder="First" id="name1" required />
+                    <input name="name" type="text" placeholder="Last" class="contain" id="name2" required />
+
+                </div>
+
+
+            </div>
+            <div class="input-box">
+                <label for="birthday">Birth Date</label>
+                <input type="date" placeholder="Enter birth date" id="birthday" required />
+            </div>
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="text" placeholder="Enter email address" name="emaill" id="email" required /><b><span class="formerror"></span></b>
+            </div>
+            <div class="input-box">
+                <div id="namee1" class="column">
+                    <label for="name2">Father'sName</label>
+                    <input type="text" placeholder="First" class="name2" id="fname" name="name2">
+                    <input type="text" placeholder="Last" class="name2" name="name2">
+
+                </div>
+
+
+
+            </div>
+            <div class="input-box">
+                <div id="namee2" class="column">
+                    <label for="name3">Mother'sName</label>
+                    <input type="text" placeholder="First" class="name3" id="mname" name="name3">
+                    <input type="text" placeholder="Last" class="name3" name="name3">
+
+                </div>
+
+            </div>
+            <div class="input-box">
+                <label for="citizen">Nationality</label>
+                <input type="text" id="citizen" placeholder="Enter nationality" required />
+            </div>
+
+
+
+
+
+
+
+            <div class="gender-box" id="gender-1">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" class="gen" name="gender" value="male" />
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" class="gen" name="gender" value="female" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" class="gen" name="gender" value="other" />
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box address">
+                <label for="address">Address</label>
+                <input type="text" placeholder="Enter street address" id="address" required />
+                <div class="column">
+                    <div class="select-box">
+                        <select id="country">
+                <option hidden>Country</option>
+                <option>Afghanistan</option>
+                <option>Argentina</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>Amsterdam</option>
+                <option>Bhutan</option>
+                <option>Brazil</option>
+                <option>Canada</option>
+                <option>Croatia</option>
+                <option>Dubai</option>
+                <option>England</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>India</option>
+                <option>Italy</option>
+                <option>Morocco</option> 
+                <option>Philippines</option>   
+                <option>Portugal</option>
+                <option>Poland</option>
+                <option>Spain</option>
+                <option>Thailand</option> 
+                <option>US</option>
+                <option>UK</option> 
+                <option>Qatar</option>
+                
+              </select>
+                    </div>
+                    <input type="text" placeholder="Enter your city" id="city" required />
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Enter your region" id="region" required />
+                    <input type="number" placeholder="Enter postal code" id="code" required />
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="number">Telephone-Home</label>
+                    <input type="tel" id="number" class="phone-no" placeholder="enter phone number" required />
+                </div>
+                <div class="input-box">
+                    <label for="number2">Telephone-Mobile</label>
+                    <input type="tel" id="number2" placeholder="Enter phone number" required />
+                </div>
+
+            </div>
+
+            <button type="submit" id="nextBtn">Next</button>
+        </form>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

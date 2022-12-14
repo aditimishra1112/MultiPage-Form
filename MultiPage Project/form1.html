@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Education Details </title>
+
+    <link rel="stylesheet" href="form1.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Education Details</header>
+        <form action="form2.html" class="form" onsubmit="return saveData()">
+            <div class="input-box">
+                <label>HSC Institution Name</label><br>
+                <input type="text" placeholder="Enter your School name" class="incol" required id="school">
+
+                <div class="input-box">
+                    <label for="board">HSC Board</label><br>
+                    <div class="select-box">
+                        <select id="boardd">
+                        <option hidden>Select</option>
+                      <option  value="cbsc">CBSE</option>
+                      <option value="icsc">ICSE</option>
+                      <option value="stateboard">Stateboard</option>
+                      <option value="other">Other</option>
+                      </select>
+
+                    </div>
+
+
+
+                    <div class="input-box">
+                        <label>Marks in HSC</label><br>
+                        <input type="percent" id="marks" placeholder="Enter in percentage" name="marks">
+
+
+                    </div>
+                    <div class="input-box">
+                        <label>SSC Institution Name</label><br>
+                        <input type="text" id="iname" placeholder="Enter your college" required name="ssc">
+
+
+
+                        <div class="input-box">
+                            <label for="board">SSC Board</label><br>
+                            <div class="select-box">
+                                <select id="boarddd" name="board">
+                              <option hidden>Select</option>
+                              <option value="cbsc">CBSE</option>
+                              <option value="icsc">ICSE</option>
+                              <option value="stateboard">Stateboard</option>
+                              <option value="other">Other</option>
+                            </select>
+                            </div>
+
+                            <div class="input-box">
+                                <label>Marks in SSC</label><br>
+                                <input type="percent" id="markks" placeholder="Enter in percentage" name="marks">
+                            </div>
+
+
+
+
+                        </div>
+
+
+                        <div class="gender-box">
+                            <h3>Current Education*</h3>
+                            <div class="gender-option">
+                                <div class="gender">
+                                    <input type="radio" id="current1" name="gender" value="Btech" />
+                                    <label for="current1">Btech</label>
+                                </div>
+                                <div class="gender">
+                                    <input type="radio" id="current2" name="gender" value="B.E" />
+                                    <label for="current1">B.E</label>
+                                </div>
+                                <div class="gender">
+                                    <input type="radio" id="current3" name="gender" value="B.Sc" />
+                                    <label for="current3">B.Sc</label>
+                                </div>
+                                <div class="gender">
+                                    <input type="radio" id="current4" name="gender" value="Diploma" />
+                                    <label for="current4">Diploma</label>
+                                </div>
+                                <div class="gender">
+                                    <input type="radio" id="current5" name="gender" value="Mtech" />
+                                    <label for="current5">Mtech</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label>Institution Name</label>
+                            <input type="text" id="insn" placeholder="Enter your college name">
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="input-box">
+                    <label for="percent">Overall Percentage</label><br>
+                    <input type="percent" id="percent" name="percent" placeholder="Enter your marks in % ">
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Current Backlogs</label>
+                <div class="select-box">
+                    <select id="backlog">
+    <option hidden>Select(if any)</option>
+  <option value="0">0(No Backlog)</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  </select>
+
+                </div>
+
+            </div>
+            <a href="index.html">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            </a>
+
+            <button type="submit" id="nextBtn">Next</button>
+
+
+
+
+
+        </form>
+    </section>
+    <script src="scr.js"></script>
+</body>
+
+</html>

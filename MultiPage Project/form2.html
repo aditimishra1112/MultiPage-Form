@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Documents </title>
+
+    <link rel="stylesheet" href="form2.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Upload your Documents here</header>
+        <form action="#" class="form" >
+            <div class="input-box">
+                <label for="image">Recent passport size photograph </label>
+                <input type="file" id="image"  accept="" onchange="return fileValidation_i()">
+
+                <div class="input-box">
+                    <label for="marksheet">HSC mark sheet</label>
+
+                    <input type="file" id="masheet"  onchange="return fileValidation_h()">
+
+                </div>
+                <div class="input-box">
+                    <label for="marksheet1">SSC mark sheet</label>
+
+                    <input type="file" id="marksheet1" onchange="return fileValidation_s()">
+
+
+                    <div class="input-box">
+                        <label for="marksheet3">All semester mark sheet</label>
+                        <input type="file" id="marksheet3" onchange="return fileValidation_o() ">
+
+                    </div>
+
+
+
+
+                </div>
+                <a href="form1.html">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+
+                </a>
+
+                <a href="thnku.html"><button type="button" id="nextBtn"> Submit</button></a>
+
+            </div>
+        </form>
+    </section>
+
+    
+    <script src="scrr.js" ></script>
+    
+    
+
+</body>
+
+</html>

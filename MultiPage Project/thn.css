@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cormorant+Garamond:ital,wght@1,300&family=Josefin+Sans:ital@1&family=Permanent+Marker&family=Sriracha&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(image.jpeg);
+}
+
+.container {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* top: 20vh; */
+    width: 50%;
+    height: 20vh;
+    border-radius: 20px;
+    background-image: url(imagee.jpg);
+}
+
+p {
+    position: absolute;
+    top: 35vh;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Sriracha', cursive;
+}
+
+@media screen and (max-width: 500px) {
+    .form .container {
+        flex-wrap: wrap;
+    }
+}
